@@ -1,0 +1,9 @@
+---
+# defaults file for package-react-ui
+
+# this points to where the projects are
+base_projects_path: "/Users/mikaki/src/github/mikaki/react"
+
+build_folder: "build"
+dist_folder: "dist"
+projects: ["iando", "mikaki", "eos"]

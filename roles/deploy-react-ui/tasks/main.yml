@@ -1,0 +1,15 @@
+---
+# tasks file for deploy-ui
+
+- name: Copy .zip file to remote /tmp/
+  ansible.builtin.copy:
+    src: "{{ base_projects_path }}/{{ item }}/{{ dist_folder }}/{{item}}.zip"
+    dest: /tmp/
+  with_items: "{{ projects }}"
+  tags: ["ui"]
+
+- name: Unzip package into installation directory
+  command: "unzip /tmp/{{ item }}.zip -d {{ ui_installation_dir }}"
+  with_items: "{{ projects }}"
+  become: yes
+  tags: ["ui"]

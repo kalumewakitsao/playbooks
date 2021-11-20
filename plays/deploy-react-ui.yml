@@ -1,0 +1,8 @@
+---
+
+- hosts: ui
+  name: Deploy React App
+  strategy: free
+  roles:
+    - { role: ../roles/deploy-react-ui}
+

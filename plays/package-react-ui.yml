@@ -1,0 +1,8 @@
+---
+
+- hosts: localhost
+  name: Package ReactJS Apps 
+  strategy: free
+  roles:
+    - { role: ../roles/package-react-ui}
+

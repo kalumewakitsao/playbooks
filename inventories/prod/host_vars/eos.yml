@@ -1,0 +1,5 @@
+---
+
+ui_installation_dir: "/opt/eos/"
+server_name: "eos.mikaki.co.ke"
+project: "eos"

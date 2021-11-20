@@ -1,0 +1,5 @@
+---
+# defaults file for configure-nginx
+
+server_name: ""
+project: ""

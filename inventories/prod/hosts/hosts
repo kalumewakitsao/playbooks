@@ -1,0 +1,4 @@
+eos ansible_host=mikaki
+mikaki ansible_host=mikaki
+iando ansible_host=mikaki
+local ansible_connection=local
